@@ -9,7 +9,7 @@ class Response
   end
 
   def allowed_headers
-    httpartyResponse.headers["allow"].split(",")
+    httpartyResponse.headers["allow"].split(/[ \t]*,[ \t]*/)
   end
 
   def body
