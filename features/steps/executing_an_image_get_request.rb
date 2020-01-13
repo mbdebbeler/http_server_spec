@@ -11,7 +11,4 @@ class Spinach::Features::ExecutingAnImageGetRequest < Spinach::FeatureSteps
     expect(@response.content_type).to include("image")
   end
 
-  step 'my response should have an image sent back in the body' do
-    expect(@response.body).to_not be_empty
-  end
 end

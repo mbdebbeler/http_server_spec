@@ -1,7 +1,6 @@
 class Spinach::Features::AGetRequestAfterADeleteReturns204 < Spinach::FeatureSteps
   step 'I make a GET request to /images/new_content.jpg again' do
     @second_get_response = Requests.get("/images/new_content.jpg")
-    puts "#{@second_get_response.inspect}"
   end
 
   step 'my response should have status code 204' do
