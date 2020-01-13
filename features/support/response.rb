@@ -8,6 +8,10 @@ class Response
     httpartyResponse.headers["location"]
   end
 
+  def content_type
+    httpartyResponse.headers["content-type"]
+  end
+
   def allowed_headers
     httpartyResponse.headers["allow"].split(/[ \t]*,[ \t]*/)
   end
